@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarvanta Estates | Find Your Dream Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">ZARVANTA<span> ESTATES</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#list-property" class="nav-button">List Your Property</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO ZARVANTA ESTATES</p>
+
+            <h1>Find a Place<br>You'll <span>Love to Call Home.</span></h1>
+
+            <p class="hero-description">
+                Discover exceptional properties, explore new opportunities
+                and make your next move with confidence.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#properties" class="primary-button">Explore Properties</a>
+                <a href="#list-property" class="outline-button">List Your Property</a>
+            </div>
+        </div>
+
+        <div class="hero-note">
+            <span class="note-line"></span>
+            <p>Real Estate. Real Relationships.</p>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <div class="search-heading">
+            <h2>Find Your Property</h2>
+            <p>Search properties according to your needs.</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchLocation" placeholder="Enter city or location">
+
+            <select id="searchType">
+                <option value="all">All Properties</option>
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+            </select>
+
+            <button id="searchButton" class="primary-button">Search</button>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="properties-section" id="properties">
+        <div class="section-heading">
+            <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+            <h2>Featured Properties</h2>
+            <p>Discover homes and spaces selected for you.</p>
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+
+            <article class="property-card" data-location="dha karachi" data-type="sale">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900"
+                        alt="Modern luxury house">
+                    <span class="property-label">For Sale</span>
+                </div>
+                <div class="property-info">
+                    <p class="property-location">DHA, Karachi</p>
+                    <h3>Modern Luxury House</h3>
+                    <p class="property-detail">5 Beds · 5 Baths · 1 Kanal</p>
+                    <div class="property-bottom">
+                        <strong>PKR 4.5 Crore</strong>
+                        <span>Residential</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="property-card" data-location="bahria town karachi" data-type="sale">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900"
+                        alt="Contemporary family home">
+                    <span class="property-label">For Sale</span>
+                </div>
+                <div class="property-info">
+                    <p class="property-location">Bahria Town, Karachi</p>
+                    <h3>Contemporary Family Home</h3>
+                    <p class="property-detail">4 Beds · 4 Baths · 500 Sq. Yards</p>
+                    <div class="property-bottom">
+                        <strong>PKR 2.8 Crore</strong>
+                        <span>Residential</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="property-card" data-location="clifton karachi" data-type="rent">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900"
+                        alt="Elegant apartment interior">
+                    <span class="property-label rent-label">For Rent</span>
+                </div>
+                <div class="property-info">
+                    <p class="property-location">Clifton, Karachi</p>
+                    <h3>Elegant Luxury Apartment</h3>
+                    <p class="property-detail">3 Beds · 3 Baths · 250 Sq. Yards</p>
+                    <div class="property-bottom">
+                        <strong>PKR 150,000 / month</strong>
+                        <span>Apartment</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+        <p id="noResults" class="no-results" hidden>No matching properties found.</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000"
+                alt="Beautiful modern property">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">ABOUT ZARVANTA ESTATES</p>
+            <h2>More Than Property.<br><span>A Better Way Forward.</span></h2>
+
+            <p>
+                At Zarvanta Estates, we help people discover the right
+                property for their goals. Whether you want to buy, sell
+                or rent, our team is here to guide you.
+            </p>
+
+            <div class="about-points">
+                <div>✓ Professional Guidance</div>
+                <div>✓ Property Buying & Selling</div>
+                <div>✓ Rental Assistance</div>
+                <div>✓ Client-Focused Service</div>
+            </div>
+
+            <a href="#contact" class="primary-button">Contact Our Team</a>
+        </div>
+    </section>
+
+    <!-- LIST PROPERTY SECTION -->
+    <section class="form-section" id="list-property">
+        <div class="section-heading">
+            <p class="eyebrow">WORK WITH US</p>
+            <h2>List Your Property</h2>
+            <p>Share your property details with Zarvanta Estates.</p>
+        </div>
+
+        <form id="propertyForm" class="main-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Property Title</label>
+                    <input type="text" id="propertyTitle" required placeholder="Example: Luxury 5 Bedroom House">
+                </div>
+
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="propertyLocation" required placeholder="Enter property location">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Property Type</label>
+                    <select id="propertyType" required>
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Price (PKR)</label>
+                    <input type="number" id="propertyPrice" required placeholder="Enter price">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Contact Number</label>
+                <input type="tel" id="propertyPhone" required placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <label>Property Description</label>
+                <textarea id="propertyDescription" rows="4" placeholder="Describe your property"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Property Picture</label>
+                <input type="file" id="propertyImage" accept="image/*">
+                <img id="imagePreview" class="image-preview" alt="Property image preview" hidden>
+            </div>
+
+            <button type="submit" class="primary-button form-submit">
+                Submit Property
+            </button>
+
+            <p id="formMessage" class="form-message"></p>
+        </form>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team-section" id="team">
+        <div class="section-heading">
+            <p class="eyebrow">THE PEOPLE BEHIND OUR WORK</p>
+            <h2>Meet Our Leadership</h2>
+            <p>Meet the team leading Zarvanta Estates.</p>
+        </div>
+
+        <div class="team-container">
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="./faraz1/WhatsApp Image 2026-11-05 at 8.46.10 PM (1).jpeg" alt="CEO Muhammad Faraz">
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">CEO & FOUNDER</span>
+                    <h3>Muhammad Faraz</h3>
+                    <p>Leading Zarvanta Estates with vision, commitment
+                        and a focus on client relationships.</p>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="./suleman/WhatsApp Image 2026-11-05 at 8.46.10 PM.jpeg" alt="Manager Muhammad Suleman">
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">GENERAL MANAGER</span>
+                    <h3>Muhammad Suleman</h3>
+                    <p>Supporting property operations and helping
+                        deliver a smooth client experience.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div>
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Ready to Find Your<br>Next Property?</h2>
+            <p>Contact Zarvanta Estates and let us help you take the next step.</p>
+        </div>
+
+        <a href="mailto:info@zarvantaestates.com" class="primary-button">
+            Email Our Team
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#" class="logo">ZARVANTA<span> ESTATES</span></a>
+        <p>© 2026 Zarvanta Estates. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
